@@ -14,6 +14,15 @@
         $lastName = $res['userLastName'];
     }
 
+    if (isset($_POST['submit'])){
+        $place = $_POST['selectDestination'];
+        $checkInDate = $_POST['checkIn'];
+        $checkOutDate = $_POST['checkOut'];
+        $quantity = $_POST['quantity'];
+        $roomType = $_POST['roomType'];
+        $meals = $_POST['meals'];
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +34,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -71,9 +81,47 @@
 
     <!--Image Slider-->
     <div class="container">
-        <nav>
-            Welcome <?php echo $firstName; echo " "; echo $lastName; ?>
-        </nav>
+        Available <strong><?php echo $roomType;?></strong> deals for <strong><?php echo $quantity;?></strong> in 
+        <strong><?php echo $place;?></strong> from <strong><?php echo $checkInDate;?></strong> to 
+        <strong><?php echo $checkOutDate;?></strong> are ---><br>
+
+        <div class="w3-row-padding w3-padding-16">
+            <form class="w3-third w3-margin-bottom">
+                <img src="img/singleRoom.jpg" alt="<?php echo $place;?>" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h3>Single Room</h3>
+                    <h6 class="w3-opacity">From Tk.999</h6>
+                    <p>Single bed</p>
+                    <p>15m<sup>2</sup></p>
+                    <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+                    <input class="w3-button w3-block w3-black w3-margin-bottom" type="submit" value="Choose Room">
+                </div>
+            </form>
+            <form class="w3-third w3-margin-bottom">
+                <img src="img/doubleRoom.jpg" alt="<?php echo $place;?>" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h3>Double Room</h3>
+                    <h6 class="w3-opacity">From Tk.1499</h6>
+                    <p>Queen-size bed</p>
+                    <p>25m<sup>2</sup></p>
+                    <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                    <input class="w3-button w3-block w3-black w3-margin-bottom" type="submit" value="Choose Room">
+                </div>
+            </form>
+            <form action="" id="ting" class="w3-third w3-margin-bottom">
+                <img src="img/deluxeRoom.jpg" alt="<?php echo $place;?>" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h3>Deluxe Room</h3>
+                    <h6 class="w3-opacity">From Tk.2999</h6>
+                    <p>King-size bed</p>
+                    <p>40m<sup>2</sup></p>
+                    <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                    <input class="w3-button w3-block w3-black w3-margin-bottom" type="submit" value="Choose Room">
+                </div>
+            </form>
+            
+        </div>
+
     </div>
 
     <main>

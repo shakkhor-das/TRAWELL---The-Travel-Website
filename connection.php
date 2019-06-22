@@ -3,15 +3,15 @@
     $hostname = "localhost";
     $username = "root";
     $password = "";
-    $database = "registration";
+    $database = "trawell";
 
-    /*$con = mysqli_connect($hostname,$username,$password);
+    $con = mysqli_connect($hostname,$username,$password);
 
-    $sql = "CREATE DATABASE registration";
+    $sql = "CREATE DATABASE trawell";
 
     //$query1 = mysqli_query($con,$sql);
 
-    if (mysqli_query($con,$sql)){
+    /*if (mysqli_query($con,$sql)){
         echo "Database created";
     }
 
@@ -63,5 +63,9 @@
         echo "failed";
         echo "<br>";
     }*/
+
+    $sqlBookingDetails = "CREATE TABLE userBookingDetails(
+        
+    )"
     
 ?>

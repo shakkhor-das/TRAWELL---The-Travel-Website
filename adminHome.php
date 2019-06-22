@@ -52,7 +52,7 @@
                         <a href="#" class="nav-link">Destinations</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Hotel Booking</a>
+                        <a href="#" class="nav-link">Add Hotel Records</a>
                     </li>
                     <li class="nav-item">
                         <a href="register.php" class="nav-link">Register</a>

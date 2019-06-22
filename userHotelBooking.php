@@ -6,12 +6,13 @@
     }
     else{
         include('connection.php');
-        $username = $_SESSION['username'];
-        $sql = "SELECT * FROM `Users` WHERE userUsername='$username' LIMIT 1";
+        //$username = $_SESSION['username'];
+        $sql = "SELECT * FROM `users` WHERE userUsername='$username' LIMIT 1";
         $q = mysqli_query($con,$sql);
         $res = mysqli_fetch_assoc($q);
         $firstName = $res['userFirstname'];
         $lastName = $res['userLastName'];
+        echo $res['userUsername'];
     }
 
 ?>
@@ -72,7 +73,30 @@
     <!--Image Slider-->
     <div class="container">
         <h4 style="margin-top:50px; text-align:center;">Booking Fundamentals</h4>
-        
+        <form action="userAvailableDeals.php" method="POST">
+            Choose A Place:
+            <select style="margin-bottom:5px;" name="selectDestination" id="selectDestination" required="required">
+                <option value="">Choose Destination</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Rajshahi">Rajshahi</option>
+            </select><br>
+            Check-In Date: <input style="margin-bottom:5px;" type="date" name="checkIn"><br>
+            Check-Out Date: <input style="margin-bottom:5px;" type="date" name="checkOut"><br>
+            Number Of Persons: <input style="margin-bottom:5px;" type="number" name="quantity" min="1" max="5"><br>
+            Choose Room Type:
+            <select style="margin-bottom:5px;" name="roomType" id="roomType">
+                <option value="">Choose Room Type</option>
+                <option value="Regular">Regular</option>
+                <option value="Deluxe">Deluxe</option>
+            </select><br>
+            Do you require meals?
+            <input type="checkbox" name="meals" value="yes">Yes
+            <input type="checkbox" name="meals" value="no">No
+            <br>
+            <input type="submit" name="submit" value="Confirm">
+        </form>
     </div>
 
     <main>
