@@ -37,10 +37,10 @@
                         <a href="#" class="nav-link">Hotel Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a href="register.php" class="nav-link">Register</a>
+                        <a href="#" class="nav-link">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.php" class="nav-link">Login</a>
+                        <a href="#" class="nav-link">Login</a>
                     </li>
                 </ul>
 

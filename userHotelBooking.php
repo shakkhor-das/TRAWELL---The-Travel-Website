@@ -47,10 +47,10 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="userHome.php" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Destinations</a>
+                        <a href="destinations.php" class="nav-link">Destinations</a>
                     </li>
                     <li class="nav-item">
                         <a href="userHotelBooking.php" class="nav-link">Hotel Booking</a>
