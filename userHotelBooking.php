@@ -10,7 +10,7 @@
         $sql = "SELECT * FROM `users` WHERE userUsername='$username' LIMIT 1";
         $q = mysqli_query($con,$sql);
         $res = mysqli_fetch_assoc($q);
-        $firstName = $res['userFirstname'];
+        $firstName = $res['userFirstName'];
         $lastName = $res['userLastName'];
         echo $res['userUsername'];
     }
@@ -56,7 +56,7 @@
                         <a href="userHotelBooking.php" class="nav-link">Hotel Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a href="register.php" class="nav-link">Register</a>
+                        <a href="userBookingRecords.php" class="nav-link">Booking Records</a>
                     </li>
                     <li class="nav-item">
                         <a href="index.php" class="nav-link">Logout</a>

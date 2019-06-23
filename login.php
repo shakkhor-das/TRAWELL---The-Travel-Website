@@ -35,7 +35,7 @@
                     echo '</script>';
                 }
                 else{
-                    $_SESSION['email'] = $flag["adminEmail"];
+                    $_SESSION['username'] = $flag["adminUsername"];
                     header('Location:adminHome.php');
                 }          
             }
@@ -56,7 +56,7 @@
                     echo '</script>';
                 }
                 else{
-                    $_SESSION['email'] = $flag["userEmail"];
+                    $_SESSION['username'] = $flag["userUsername"];
                     header('Location:userHome.php');
                 }
             }

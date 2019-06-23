@@ -65,7 +65,7 @@
                     <br>
                 </h4>
                 <h6 style="text-align:center;">
-                    Please follow the link <a href="userHome.php">CLICK HERE</a>
+                    Please log in to continue <a href="login.php">CLICK HERE</a>
                 </h6>
             </div>
         </div>        
