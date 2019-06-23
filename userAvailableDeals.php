@@ -86,7 +86,7 @@
         <strong><?php echo $checkOutDate;?></strong> are ---><br>
 
         <div class="w3-row-padding w3-padding-16">
-            <form class="w3-third w3-margin-bottom">
+            <form action="confirmReservation.php" class="w3-third w3-margin-bottom">
                 <img src="img/singleRoom.jpg" alt="<?php echo $place;?>" style="width:100%">
                 <div class="w3-container w3-white">
                     <h3>Single Room</h3>
@@ -97,7 +97,7 @@
                     <input class="w3-button w3-block w3-black w3-margin-bottom" type="submit" value="Choose Room">
                 </div>
             </form>
-            <form class="w3-third w3-margin-bottom">
+            <form action="confirmReservation.php" class="w3-third w3-margin-bottom">
                 <img src="img/doubleRoom.jpg" alt="<?php echo $place;?>" style="width:100%">
                 <div class="w3-container w3-white">
                     <h3>Double Room</h3>
@@ -108,7 +108,7 @@
                     <input class="w3-button w3-block w3-black w3-margin-bottom" type="submit" value="Choose Room">
                 </div>
             </form>
-            <form action="" id="ting" class="w3-third w3-margin-bottom">
+            <form id="ting" action="confirmReservation.php" class="w3-third w3-margin-bottom">
                 <img src="img/deluxeRoom.jpg" alt="<?php echo $place;?>" style="width:100%">
                 <div class="w3-container w3-white">
                     <h3>Deluxe Room</h3>
